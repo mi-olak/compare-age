@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+
+    <h2>this is javascript!</h2>
+    <p>A simple program comparing my age to others</p>
+    <input type="number" value="" id="age" placeholder="Enter your age">
+    <button onclick="mcFemi()"> compare our age!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function mcFemi() {
+            var x = 29;
+            var y = document.getElementById("age").value;
+
+            let femi;
+
+            if (x > y) {
+                femi = "I am older";
+            } else if (x < y) {
+                femi = "you're older than i am";
+            } else {
+                femi = "same age lol"
+            }
+            document.getElementById("demo").innerText = femi;
+        }
+    </script>
+    <style>
+        body {
+            font-size: medium;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: skyblue;
+        }
+    </style>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- this is how to call a function in an object-->
+<!--
+
+    var femi = {
+    name: "dotun",
+    height: 6,
+    weight: "not fat",
+    pet: "one rott",
+    likes: "apple",
+    rapper: "j cole",
+    mySmokes: function () {
+        return this.height + " " + this.pet;
+    }
+};
+
+document.getElementById("main").innerHTML =
+    femi.mySmokes();
+-->
